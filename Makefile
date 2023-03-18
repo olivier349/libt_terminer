@@ -78,7 +78,7 @@ so:
 	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 
-bonus:	${OBJS_BONUS}
+bonus:	${OBJS} ${OBJS_BONUS} 
 		ar rcs ${NAME} ${OBJS_BONUS} ${NAME} 
 
 clean:
